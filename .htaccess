@@ -5,9 +5,9 @@ Deny from all
 </FilesMatch>
 
 RewriteEngine on
-RewriteRule strona-glowna index.html
+RewriteRule stronaglowna index.html
 RewriteRule umiejetnosci umiejetnosci.html
-RewriteRule aplikacje-typu-crud aplikajcetypucrud.html
-RewriteRule aplikacje-kbe aplikacjekbe.html
-RewriteRule gry-2d gry2d.html
+RewriteRule aplikacjetypucrud aplikajcetypucrud.html
+RewriteRule aplikacjekbe aplikacjekbe.html
+RewriteRule gry2d gry2d.html
 RewriteRule kontakt kontakt.html
