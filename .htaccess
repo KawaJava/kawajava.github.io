@@ -5,7 +5,6 @@ Deny from all
 </FilesMatch>
 
 RewriteEngine on
-RewriteRule stronaglowna index.html
 RewriteRule umiejetnosci umiejetnosci.html
 RewriteRule aplikacjetypucrud aplikajcetypucrud.html
 RewriteRule aplikacjekbe aplikacjekbe.html
