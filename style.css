@@ -1,0 +1,112 @@
+body{
+    background-color: black;
+    color: white;
+    margin: 0 !important;
+}
+.wrapper{
+    width: 100%;
+}
+.header{
+    width: 100%;
+    padding: 40px 0;
+}
+.logo{
+    width: 650px;
+    font-size: 48px;
+    /*border: 1px solid white;*/
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.nav{
+    width: 100%;
+    padding: 10px 0;
+    background-color: #006993;
+    text-align: center;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+.content{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    padding: 10px;
+    font-size: 18px;
+}
+#linki{
+    padding: 5px;
+    background-color: #006993;
+    font-size: 24px;
+}
+.footer{
+    text-align: center;
+    background-color: #222222;
+    padding: 20px;
+}
+ol{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 18px;
+    height: 35px;
+    line-height: 200%;
+    display: inline-block;
+}
+ol a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+ol > li{
+    float: left;
+    width: 300px;
+    height: 40px;
+    border-right: 1px dashed white;
+}
+ol > li :first-child{
+    border-left: 1px dashed white;
+}
+ol > li:hover{
+    background-color: #3095d3;
+}
+ol > li:hover > a{
+    color: #451717;
+}
+ol > li > ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    display: none;
+}
+ol > li:hover > ul{
+    display: block;
+}
+ol > li > ul > li {
+    background-color: #0098D5;
+    position: relative;
+    z-index: 100;
+    border-top: 1px dashed white;
+}
+ol > li > ul > li:hover{
+    background-color: #006993;
+}
+ol > li > ul > li:hover > a{
+    color: #451717;
+}
+.podpis{
+    text-align: center;
+    color: darkgrey;
+}
+.scrollup
+{
+	width: 64px;
+	height: 64px;
+	text-decoration: none;
+	background: url("crud/scroll.png") no-repeat 0px 0px;
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	display: none;
+}

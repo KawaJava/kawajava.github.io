@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang = "pl">
+    <head>
+        <title>Jakub Popek - portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name= "description" content = "strona"/>
+        <link rel = "stylesheet" href="style.css" type="text/css" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+        <script src="jquery.scrollTo.min.js"></script>
+
+        <script>
+
+            jQuery(function ($)
+            {
+                $.scrollTo(0);
+
+                $('.scrollup').click(function () {
+                    $.scrollTo($('.wrapper'), 1000);
+                });
+            }
+            );
+
+            $(window).scroll(function ()
+            {
+                if ($(this).scrollTop() > 100)
+                    $('.scrollup').fadeIn();
+                else
+                    $('.scrollup').fadeOut();
+            }
+            );
+
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class = "wrapper">
+            <div class ="header">
+                <div class ="logo"> inż.
+                    <span style = "color: #006993"> Jakub Popek </span>
+                    <div style="clear:both"></div>
+                </div>
+            </div>
+
+            <div class = "nav">
+                <ol>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="umiejetnosci.html">Umiejętności</a></li>
+                    <li><a href="">Zrealizowane projekty (Java)</a>
+                        <ul>
+                            <li><a href="aplikacjekbe.html">Aplikacje KBE</a></li>
+                            <li><a href="aplikacjetypucrud.html">Aplikacje typu CRUD</a></li>
+                            <li><a href="gry2d.html">Gry 2D</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ol>
+            </div>
+            <div class = "content">
+                <h1> Witaj na mojej stronie</h1>
+
+                <p>Znajdziesz tutaj informacje o mnie oraz o zrealizowanych przeze mnie projektach. Dowiesz się też, jak zaczęła się moja przygoda
+                    z programowaniem.</p>
+
+                <h2>Moja przygoda z programowaniem</h2>
+
+                <p> Po raz pierwszy zetknąłem się z programowaniem na studiach. 
+                    Nauczyłem się wtedy podstaw C++ (instrukcje warunkowe, pętle, tablice, listy itp.).
+                    W języku Java zacząłem pisać pod koniec 2018 roku. Powtórzyłem sobie zdobyte wcześniej wiadomości
+                    i napisałem pierwsze aplikacje okienkowe. Programowanie stało się moim hobby.</p>
+
+                <p>Na większą skalę zająłem się programowaniem w 2020 roku. Na studiach miałem przedmiot poświęcony bazom danych. 
+                    Zacząłem się nie tylko uczyć baz danych i języka SQL, ale też pisać aplikacje połączone z bazami danych. 
+                    Jednocześnie rozwijałem swoje umiejętności w samym programowaniu i zrozumiałem podejście obiektowe.</p>
+
+                <p>W 2021 roku napisałem pracę przejściową pt. "System rejestracji obłożenia sal wykładowych oraz pracy wykładowców". 
+                    Była to moja pierwsza większa aplikacja typu CRUD. 
+                    <a href="https://github.com/KawaJava/Portiernia-2021"> <span style = "color: #4668b3">Link</span></a> 
+                    do zmodyfikowanej wersji tego programu. 
+                    Oprócz tego napisałem kilka aplikacji inżynierskich, połączonym z programem SolidWorks.</p>
+
+                <p>W 2022 roku obroniłem na ocenę bardzo dobrą pracę dyplomową inżynierską. Jej tematem była aplikacja inżynierska wspomagająca 
+                    proces projektowania przekładni zębatych. Aplikacja była bardzo rozbudowana i połączona z programem SOLIDWORKS,
+                    w którym można było wygenerować model 3D zaprojktowanej skrzyni. Opisałem ją dokładnie w 
+                    <a href="aplikacjekbe.html"> <span style = "color: #4668b3">Aplikacje KBE</span></a>.</p>
+
+                <p>Teraz już mogłem skupić się tylko na rozwijaniu moich umiejętności w programowaniu. Z tutoriali na 
+                    YouTube nauczyłem się pisać gry komputerowe. Ukończyłem także kurs obsługi git/GitHub, dzięki któremu poznałem  
+                    podstawy obsługi konsoli systemowej oraz pracować z repozytoriami.
+                    Zacząłem rozmieć, czym zajmuje się developer (Pull Requesty, Sprinty, itp.) </p>
+
+                <p>Poznałem zasadamy pisania czystego kodu (KISS, SOLID, DRY itp.).
+                    Staram się pisać kod o wysokiej jakości i dbać o jego przejrzystość, czytelność oraz zrozumiałość dla innych programistów.
+                    Interesuję się metodą TDD, którą chcę wdrożyć do tworzenia swoich aplikacji.</p>
+
+                <p>Ostatnie miesiące poświęciłem na naukę frameworków i poznanie podstaw frontendu.</p>
+
+                <div style="clear:both"></div>
+            </div>
+
+            <div class = "footer">
+                2023 &copy Jakub Popek Wszystkie prawa zastrzeżone.
+            </div>
+
+        </div>
+
+        <a href="#" class="scrollup"></a>
+
+    </body>
+</html>

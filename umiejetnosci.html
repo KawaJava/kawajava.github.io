@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang = "pl">
+    <head>
+        <title>Jakub Popek - portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name= "description" content = "Jan Kowalski - portfolio"/>
+        <link rel = "stylesheet" href="style.css" type="text/css" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+        <script src="jquery.scrollTo.min.js"></script>
+
+        <script>
+
+            jQuery(function ($)
+            {
+                $.scrollTo(0);
+
+                $('.scrollup').click(function () {
+                    $.scrollTo($('.wrapper'), 1000);
+                });
+            }
+            );
+
+            $(window).scroll(function ()
+            {
+                if ($(this).scrollTop() > 100)
+                    $('.scrollup').fadeIn();
+                else
+                    $('.scrollup').fadeOut();
+            }
+            );
+
+
+        </script>
+
+    </head>
+    <body>
+        <div class = "wrapper">
+            <div class ="header">
+                <div class ="logo"> inż.
+                    <span style = "color: #006993"> Jakub Popek </span>
+                    <div style="clear:both"></div>
+                </div>
+            </div>
+            <div class = "nav">
+                <ol>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="umiejetnosci.html">Umiejętności</a></li>
+                    <li><a href="">Zrealizowane projekty (Java)</a>
+                        <ul>
+                            <li><a href="aplikacjekbe.html">Aplikacje KBE</a></li>
+                            <li><a href="aplikacjetypucrud.html">Aplikacje typu CRUD</a></li>
+                            <li><a href="gry2d.html">Gry 2D</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ol>
+            </div>
+            <div class = "content">
+
+                <h1> Umiejętności:</h1>
+
+                <h2>Języki oraz technologie, z którymi pracuję dłuższy czas i znam już dość dobrze.</h2>
+
+                <p>- Java - to mój ulubiony język programowania. Piszę w nim od kilku lat i ciągle doskonalę swoje umiejętności. 
+                    Z tym językiem wiążę swoją karierę zawodową.</p>
+
+                <p>- Bazy danych - używam głównie baz relacyjnych (MySQL, MS Access). Projektuję bazy składające się z kilkudziesięciu tabel.
+                    Umiem tworzyć tabele, łączyć je ze sobą, używać JOINów, dodawać rekordy, aktualizować je oraz usuwać. 
+                    Ponadto potrafię tworzyć kwerendy. 
+                    Zaprojektowane bazy danych łączę z aplikacjami napisanymi w Javie (dawniej wykonywałem wszystko ręcznie, 
+                    teraz staram się używać frameworka
+                    Spring Boot, co znacznie zmniejsza ilość kodu). Posiadam także podstawowe wiadomości na temat baz noSQL – głównie 
+                    MongoDB, ale jeszcze nie pracowałem z tym typem baz danych.</p>
+
+                <p>- Git/GitHub – znam podstawy obsługi konsoli systemowej, potrafię dodawać pliki, commitować, używać stasha, koment git clean, 
+                    git reset itp. Umiem pracować zarówno na pojedynczym, jak i na wielu branchach oraz tworzyć Pull Requesty. Swoje commity zamieszczam 
+                    na głównym branchu za pomocą rebase’a (preferuję to rozwiązanie zamiast merge).</p>
+
+                <p>- Hibernate – potrafię mapować relacyjne bazy danych (relacje OneToOne, OneToMany, ManyToMany). Znam język JPQL, umiem lockować dane,
+                    cacheować, batchować itp. Korzystam z Hibernate w frameworku Spring na dwa sposoby: poprzez DAO oraz poprzez Spring Data JPA. </p>
+
+                <p>- Spring – mój ulubiony framework. Od kiedy nauczyłem się go używać, bardzo często tworzę w nim nowe aplikacje i ciągle poznaję 
+                    jego możliwości. Obecnie uczę się Spring Security.</p>
+
+                <p>- Clean Code – staram się pisać czysty kod zgodnie z zasadami KISS, SOLID, DRY itp. Dbam o wysoką jakość wytwarzanego kodu oraz
+                    tworzyć nazwy klas i metod tak, aby były zrozumiałe i czytelne dla innych programistów (oczywiście w języku angielskim).</p>
+
+                <p>- Testowanie aplikacji - potrafię pisać testy jednostkowe i integracyjne. Choć znam je od niedawna, wiem, że są bardzo ważną
+                    częścią aplikacji. Staram się także opanować technikę TDD, która jest czasochłonna, ale
+                    jej opanowanie procentuje lepiej napisanym kodem.</p>
+
+                <h2>Pozostałe języki oraz technologie, z którymi mam lub miałem styczność.</h2>
+
+                <p>- JSON - format danych, którego używam przy programowaniu aplikacji backendowych.</p>
+
+                <p>- Maven – stosuję głównie do wstrzykiwania zależności. Czasami używam też Gradle'a.</p>
+
+                <p>- html/css – stawiam swoje pierwsze kroki jeśli chodzi o tworzenie stron internetowych, głównie w oparciu o tutoriale z YT. 
+                    Jedną z moich pierwszych stron jest właśnie ta.</p>
+
+                <p>- REST API – znam jego główne cechy, poziomy zaawansowania itp. Stosuję w aplikacjach backendowych. </p>
+
+                <p>- Projekt Lombok – biblioteka ułatwiająca programowanie i skracająca ilość kodu.</p>
+
+                <p>- C++ - język, z którym miałem do czynienia na początku studiów. 
+                    Nauczyłem się w nim podstaw programowania – pętli, instrukcji warunkowych, tablic, list, funkcji itd.
+                    Obecnie bardzo rzadko go używam.</p>
+
+                <p>- Visual Basic – kolejny język, z którym miałem do czynienia na studiach. Nie należy on jednak do moich ulubionych, 
+                    więc poza projektami na studiach nigdy więcej go nie stosowałem.</p>
+
+
+                <div style="clear:both"></div>
+            </div>
+
+            <div class = "footer">
+                2023 &copy Jakub Popek Wszystkie prawa zastrzeżone.
+            </div>
+
+        </div>
+
+        <a href="#" class="scrollup"></a>
+
+    </body>
+</html>
