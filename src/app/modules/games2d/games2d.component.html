@@ -1,0 +1,124 @@
+<div class = "content">
+    <h1>Gry 2D</h1>
+
+    <h2>Nazwa gry</h2>
+
+    <p>Gra została przeze mnie napisana na podstawie tutorialu z youtube. Jest jednak już bardzo zmodyfikowana i posiada dużo nowych 
+        funkcjonalności. Niektóre rzeczy są jeszcze identyczne jak w grze pokazanej na youtube, jednak będę je również
+        modyfikował lub usuwał,
+        aby miały jak najmniej wspólnego z orginalną wersją.</p>
+
+    <h3>Cel gry</h3>
+
+    <p>Celem gry jest znalezienie skarbu i pokonanie jak największej liczby przeciwników (w tym momencie są to tylko potworki,
+        jednak pracuję już nad nowymi przeciwnikami do pokonania).</p>
+
+    <h3>Dostępna broń ręczna</h3>
+
+    <p>W grze są do wyboru 3 typy broni ręcznej:</p>
+
+    <p><img width="48" src="assets/gra/sword_normal.png" />Miecz</p>
+
+    <p>Podstawowa broń, która zadaje średnio 90 uszkodzeń. Nie wyróżnia się niczym specjalnym, poza tym, że ma duży promień ataku.</p>
+
+    <p><img width="48" src="assets/gra/axe.png" />Siekiera</p>
+
+    <p>Silna broń, która zadaje średnio 250 uszkodzeń. Można jej używać do atakowania potworków lub do wycinania drzew, w celu skrócenia
+        sobie drogi. Jej wadą jest mniejszy promień rażenia.</p>
+
+    <p><img width="48" src="assets/gra/freezinghammer.png" />Zamrażający młot</p>
+
+    <p>Unikalna broń, która zadaje średnio 100 uszkodzeń. Najważaniejszy jest jednak fakt, że można nim 
+        zamrażać/odmrażać potworki. Zamrożony potworek spada na ziemię i jeśli uderzy w innego, nizamrożonego potworka, zniszczy go zupełnie.
+        Dzięki temu można zadać bardzo duże uszkodzenia - spadający zamrożony potworek może zniszczyć kilka innych potworków i w ten sposób
+        zadać nawet kilka tysięcy uszkodzeń. Jedyną wadą tej broni jest mniejszy promień rażenia (podobnie jak w przypadku siekiery).</p>
+
+    <h3>Strzelanie</h3>
+
+    <p>W tej wersji gry mechanika strzelenia nie jest jeszcze rozbudowana. W następnych wersjach pojawi się możliwość wyboru broni
+        oraz różne pociski o różnych uszkodzeniach na strzał. W tym momencie w grze są dostępne tylko 2 rodzaje "pocisków".
+        Funkcjonalność ta bazuje jeszcze na wersji tutorialowej gry.</p>
+
+    <p><img width="48" src="assets/gra/fireball_down_1.png" />Ogniowy pocisk</p>
+
+    <p>Tylko gracz może go używać. 
+        <img width="48" src="assets/gra/manacrystal_full.png" />. Zadaje największe uszkodzenia - 
+        średnio 490 na strzał. Aby móc wystrzelić, trzeba mieć przynajmniej jeden kryształ. 
+        Ilość kryształów jest jednak ograniczona.</p>
+
+    <p><img width="48" src="assets/gra/rock_down_1.png" />Skalny pocisk</p>
+
+    <p>Mogą go używać tylko potworki. Każdy potworek wystrzeliwuje pocisk co jakiś czas (jest to zdarzenie losowe). Średnia 
+        wartość uszkodzeń na strzał wynosi 250.</p>
+
+    <h3>Kalkulator uszkodzeń</h3>
+
+    <p>Uszkodzenia zadawane w tej grze (zarówno przez broń białą, jak i pociski) są generowane losowo z przedziału
+        wartości między 75 a 125 procent bazowych (średnich) uszkodzeń na strzał. Odpowiada za to specjalna klasa.</p>
+
+    <h3>Postać</h3>
+
+    <p><img width="48" src="assets/gra/boy_down_2.png" /></p>
+
+    <p>Celem naszej postaci jest zdobycie skarbu. Ma na start 1200 punktów wytrzymałości (zdobywając doświadczenie można tę 
+        wartość nieznacznie podnieść). Na początku
+        gry ma zwykły miecz w ekwipunku. Może regenerować punkty wytrzymałości poprzez wypijanie 
+        niebieskich porcji <img width="48" src="assets/gra/portion_blue.png" />(przedmiot przechowywany w ekwipunku, daje 500 punkty wytrzymałości) 
+        oraz serca <img width="48" src="assets/gra/heart_full.png" />zbierane z mapy (nie trafiają
+        do ekwipunku, od razu dają 200 punktów wytrzymałości, więc lepiej z nich nie korzystać mają maksymalną ich ilość).</p>
+
+    <h3>Przeciwnicy</h3>
+
+    <p>Na tę chwilę w grze jest tylko jeden typ przeciwników. W następnych aktualizacjach będą pojawiać się kolejni.</p>
+
+    <p><img width="48" src="assets/gra/monster_up_1.png" />Potworki</p>
+
+    <p>Przy kontakcie z nimi zadają uszkodzenia o średniej wartości 390 strzelają skalnymi pociskami.  
+        Trzeba na nie uważać, szczególnie gdy jest ich kilka. Mogą dość szybko pozbawić nas wielu punktów 
+        wytrzymałości. Najlepiej jest je zamrażać - zamrożony potworek opada w dół i jest bezbronny. Wtedy można pozbyć się go w łatwy sposób.
+        Trzeba jednak pamiętać, że zamrożonego potworka można odmrozić. Każdy potworek ma na start 1500 punktów wytrzymałości.</p>
+
+    <h3>Galeria screenów</h3>
+
+    <div class = "podpis">
+        <img width="700" src="assets/gra/rozgrywka1.png" />
+    </div>
+
+    <p></p>
+
+    <div class = "podpis">
+        <img width="700" src="assets/gra/rozgrywka2.png" />
+    </div>
+
+    <p></p>
+
+    <div class = "podpis">
+        <img width="700" src="assets/gra/rozgrywka3.png" />
+    </div>
+
+    <p></p>
+
+    <div class = "podpis">
+        <img width="700" src="assets/gra/rozgrywka4.png" />
+    </div>
+
+    <p></p>
+
+    <div class = "podpis">
+        <img width="700" src="assets/gra/rozgrywka5.png" />
+    </div>
+
+    <p></p>
+
+    <div class = "podpis">
+        <img width="700" src="assets/gra/rozgrywka6.png" />
+    </div>
+
+    <p></p>
+
+    <div class = "podpis">
+        <img width="700" src="assets/gra/rozgrywka7.png" />
+    </div>
+
+    <div style="clear:both"></div>
+</div>

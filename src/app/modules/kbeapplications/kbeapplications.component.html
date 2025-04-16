@@ -1,0 +1,198 @@
+<div class = "content">
+
+    <h1>Aplikacje inżynierskie KBE</h1>
+
+    <p>Aplikacje inżynierskie oparte na wiedzy (z angielskiego KBE - Knowledge Based Engineering) - to programy coraz częściej stosowane 
+        w wielu firmach. Ułatwiają one konstruowanie części lub całych maszyn oraz znacznie skracają czas ich projektowania.</p>
+
+    <h2>"Oprogramowanie wspomagającego dobór przełożeń i dobór parametrów przekładni zębatych w samochodowych skrzyniach biegów"</h2>
+
+    <p>Program ten napisałem w 2022 roku. Jest to moja praca dyplomowa, dlatego nie zamieściłem jej w publicznym repozytorium na GitHubie.</p>
+
+    <p>Aplikacja pozwala na szybkie projektowanie manualnych skrzyń biegów (zarówno dwuwałkowych jak i trzywałkowych) oraz modyfikowanie 
+        już istniejących skrzyń np. zwiększenie liczby biegów. Dzięki możliwości generowania wykresów typu: charakterystyka trakcyjna, 
+        bilans mocy lub wykres sił napędowych na poszczególnych biegach pojazdu w funkcji prędkości, można stwierdzić, 
+        czy dobrane przełożenia są satysfakcjonujące oraz czy wprowadzone dane są poprawne. Jeżeli po analizie wykresów 
+        inżynier uznaje, że dobrane przełożenia nie są optymalne, istnieje możliwość skorygowania wybranych wcześniej wartości 
+        np. liczby biegów. Ponadto można zastosować tę aplikację do wyznaczania parametrów przekładni kół zębatych skrzyń dwusprzęgłowych.</p>
+
+    <p>Poniżej pokazany został wygląd aplikacji oraz przebieg obliczeń w niej przeprowadzanych. 
+        W celu zaprezentowania możliwości aplikacji, zaprojektowano skrzynie biegów na 
+        podstawie danych technicznych przykładowego samochodu.</p>
+
+        <div class="podpis">
+            <img width="500" src="assets/img/1.png" />
+        </div>
+        <div class="podpis">Rys. 1 Okno wyświetlane po uruchomieniu programu</div>
+        
+        <p>W przypadku, gdy przełożenia są już dobrane, należy tylko podać przełożenia i dane pojazdu w oknie danych skrzyni.
+            W przeciwnym wypadku, projektowanie skrzyni należy rozpocząć od obliczeń trakcyjnych</p>
+        
+        <div class="podpis">
+            <img width="700" src="assets/img/daneskrzyni.png" />
+        </div>
+        <div class="podpis">Rys. 2 Okno do wprowadzania danych skrzyni</div>
+        
+        <h3>Moduł do wyznaczania przełożeń oraz wykonywania charakterystyk trakcyjnych</h3>
+        
+        <p>W pierwszym oknie modułu do wyznaczania przełożeń i wykonywania charakterystyk trakcyjnych obsługujący program ma możliwość 
+            wprowadzenia wszystkich niezbędnych danych do przeprowadzenia owych obliczeń. Dane te można wprowadzić ręcznie lub wczytać 
+            z pliku tekstowego.</p>
+        
+        <div class="podpis">
+            <img width="700" src="assets/img/obliczeniatrakcyjne1.png" />
+        </div>
+        <div class="podpis">Rys. 3 Okno do wprowadzania danych skrzyni</div>
+        
+        <p>Następnie, należy kolejno wprowadzić dane i z pomocą aplikacji dobrać przełożenia. Poniżej zamieściłem screeny pokazujące 
+            proces projektowania skrzyni w tym module.</p>
+        
+        <div class="podpis">
+            <img width="700" src="assets/img/obliczeniatrakcyjne4.png" />
+        </div>
+        <div class="podpis">Rys. 4 Wybór pozostałych parametrów pojazdu</div>
+        
+        <p></p>
+        
+        <div class="podpis">
+            <img width="700" src="assets/img/obliczeniatrakcyjne5.png" />
+        </div>
+        <div class="podpis">Rys. 5 Tabela charakterystyki silnika spalinowego</div>
+        
+        <p></p>
+        
+        <div class="podpis">
+            <img width="700" src="assets/img/obliczeniatrakcyjne6.png" />
+        </div>
+        <div class="podpis">Rys. 6 Okno doboru przełożenia biegu pierwszego i przekładni głównej</div>
+        
+        <p>W aplikacji zawarte są "podpowiedzi". Chcąc upewnić się, jak dobrać daną wartość, można kliknąć przycisk „?” przy danej zmiennej. 
+            Program wyświetla wtedy okno dialogowe z odpowiednią informacją.</p>
+        
+        <div class="podpis">
+            <img width="500" src="assets/img/obliczeniatrakcyjne7.5.png" />
+        </div>
+        <div class="podpis">Rys. 7 Informacja nt. doboru przełożenia biegu pierwszego</div>
+        
+        <p></p>
+        
+        <div class="podpis">
+            <img width="700" src="assets/img/obliczeniatrakcyjne9.png" />
+        </div>
+        <div class="podpis">Rys. 8 Okno doboru przełożeń biegów pośrednich</div>
+        
+        <p></p>
+        
+        <div class="podpis">
+            <img width="700" src="assets/img/obliczeniatrakcyjne10.png" />
+        </div>
+        <div class="podpis">Rys. 9 Okno podsumowania pierwszej część obliczeń</div>
+        
+        <p></p>
+        
+        <p>W tej karcie istnieje możliwość wygenerowania wykresów: charakterystyki trakcyjnej, charakterystyki dynamicznej oraz 
+            siły/mocy w funkcji prędkości jazdy. Dzięki temu można przeanalizować dobrane przełożenia i w wypadku zatwierdzenia 
+            ich, przejść do modułu odpowiadającego za odpowiednie dobranie odległości osi a.</p>
+        
+        <div class="podpis">
+            <img width="700" src="assets/img/wykres1.png" />
+        </div>
+        <div class="podpis">Rys. 10 Wykres mocy w funkcji prędkości jazdy</div>
+        
+        <h3>Moduł do wyznaczania odległości osi</h3>
+        
+        <p>Po wprowadzeniu lub obliczeniu przełożeń poszczególnych biegów, należy dobrać wstępnie odległość osi a. [...]</p>
+        
+        <div class="podpis">
+            <img width="700" src="assets/img/odlegloscosia1.png" />
+        </div>
+        <div class="podpis">Rys. 11 Moduł doboru odległości osi a</div>
+        
+        <p>[...]</p>
+        
+        <div class="podpis">
+            <img width="700" src="assets/img/odlegloscosia3.png" />
+        </div>
+        <div class="podpis">Rys. 12 Wyznaczenie odległości osi a ze względu na wytrzymałość zęba dla poszczególnych przekładni</div>
+        
+        <div class="podpis">
+            <img width="700" src="assets/img/odlegloscosia4.png" />
+        </div>
+        <div class="podpis">Rys. 13 Wyznaczenie odległości osi a ze wzoru empirycznego</div>
+        
+        <div class="podpis">
+            <img width="700" src="assets/img/odlegloscosia5.png" />
+        </div>
+        <div class="podpis">Rys. 14 Kolejne obliczenia odległości osi a</div>
+        
+        <div class="podpis">
+            <img width="700" src="assets/img/odlegloscosia8.png" />
+        </div>
+        <div class="podpis">Rys. 15 Ustalenie odległości osi a</div>
+        
+        <h3>Moduł do wyznaczania parametrów geometrycznych przekładni zębatych</h3>
+        
+        <p>[...]</p>
+        
+        <div class="podpis">
+            <img width="700" src="assets/img/parametry1.png" />
+        </div>
+        <div class="podpis">Rys. 16 Tabela z danymi ze wcześniejszych obliczeń</div>
+        
+        <div class="podpis">
+            <img width="700" src="assets/img/parametry3.png" />
+        </div>
+        <div class="podpis">Rys. 17 Pierwsze obliczenia przekładni zębatych</div>
+        
+        <div class="podpis">
+            <img width="700" src="assets/img/parametry6.png" />
+        </div>
+        <div class="podpis">Rys. 18 Dobór podstawowych parametrów przekładni zębatej</div>
+        
+        <div class="podpis">
+            <img width="700" src="assets/img/parametry7.png" />
+        </div>
+        <div class="podpis">Rys. 19 Tabela z podstawowymi wartościami obliczanej przekładni zębatej</div>
+        
+        <div class="podpis">
+            <img width="700" src="assets/img/parametry10.png" />
+        </div>
+        <div class="podpis">Rys. 20 Dobór dalszych parametrów</div>
+        
+        <div class="podpis">
+            <img width="700" src="assets/img/parametry12.png" />
+        </div>
+        <div class="podpis">Rys. 21 Dobór średnic podstaw i średnic wierzchołków</div>
+        
+        <div class="podpis">
+            <img width="700" src="assets/img/parametry14.png" />
+        </div>
+        <div class="podpis">Rys. 22 Liczenie pozostałych parametrów</div>
+        
+        <div class="podpis">
+            <img width="700" src="assets/img/parametry16.png" />
+        </div>
+        <div class="podpis">Rys. 23 Tabela z wyznaczonymi parametrami poprawności zazębienia</div>
+        
+        <div class="podpis">
+            <img width="700" src="assets/img/parametry20.png" />
+        </div>
+        <div class="podpis">Rys. 24 Podsumowanie wszystkich obliczeń dla danej przekładni</div>
+        
+        <div class="podpis">
+            <img width="700" src="assets/img/parametry21.png" />
+        </div>
+        <div class="podpis">Rys. 25 Zapis parametrów do pliku tekstowego</div>
+        
+        <h3>Model skrzyni biegów w programie SolidWorks</h3>
+        
+        <div class="podpis">
+            <img width="700" src="assets/img/model1.png" />
+        </div>
+        <div class="podpis">Rys. 26 Wygenerowany model 3D skrzyni</div>
+        
+        <div class="podpis">
+            <img width="700" src="assets/img/model2.png" />
+        </div>
+        <div class="podpis">Rys. 27 Model 3D skrzyni w innym widoku</div>
+        
