@@ -1,0 +1,82 @@
+@import '/src/styles/variables.scss';
+.nav {
+    width: 100%;
+    padding: 10px 0;
+    background-color: $color-primary;
+    text-align: center;
+    border-bottom: 1px solid $color-border;
+    border-top: 1px solid $color-border;
+  }
+  
+  ol {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: $font-size-base;
+    height: 35px;
+    line-height: 200%;
+    display: inline-block;
+  }
+  
+  ol a {
+    color: $color-border;
+    text-decoration: none;
+    display: block;
+  }
+  
+  ol > li {
+    float: left;
+    width: 300px;
+    height: $nav-height;
+    border-right: 1px dashed $color-border;
+  }
+  
+  ol > li :first-child {
+    border-left: 1px dashed $color-border;
+  }
+  
+  ol > li:hover {
+    background-color: $color-primary-light;
+  }
+  
+  ol > li:hover > a {
+    color: $color-hover-text;
+  }
+  
+  ol > li > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: $nav-height;
+    display: none;
+  }
+  
+  ol > li:hover > ul {
+    display: block;
+  }
+  
+  ol > li > ul > li {
+    background-color: $color-secondary;
+    position: relative;
+    z-index: 100;
+    border-top: 1px dashed $color-border;
+  }
+  
+  ol > li > ul > li:hover {
+    background-color: $color-primary;
+  }
+  
+  ol > li > ul > li:hover > a {
+    color: $color-hover-text;
+  }
+  
+  .footer {
+    text-align: center;
+    background-color: $color-primary;
+    padding: 20px;
+  }
+  
+  .podpis {
+    text-align: center;
+    color: $color-footer-text;
+  }

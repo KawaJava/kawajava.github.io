@@ -1,0 +1,11 @@
+@import '/src/styles/variables.scss';
+.footer {
+    text-align: center;
+    background-color: $color-primary;
+    padding: 20px;
+  }
+  
+  .podpis {
+    text-align: center;
+    color: $color-footer-text;
+  }
