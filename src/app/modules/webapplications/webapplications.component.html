@@ -1,4 +1,83 @@
-<div class="under-construction">
-    <div class="animated-icon">🚧</div>
-    <p>Sekcja w budowie</p>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MMOEstateManager - Aplikacje Webowe</title>
+</head>
+
+<body>
+
+  <div class="content">
+    <h1>MMOEstateManager</h1>
+    <p>MMOEstateManager to nowoczesna aplikacja internetowa, która oferuje graczom MMO intuicyjny interfejs do
+      przeglądania i zarządzania włościami w grach, w tym stanem złota oraz danymi o szeryfach i wójtach. Dzięki
+      śledzeniu historycznych zmian, użytkownicy mogą monitorować ilości złota i szybko identyfikować anomalie, np.
+      przekroczenie ustalonych limitów.</p>
+
+    <h2>Kluczowe funkcje</h2>
+    <ul>
+      <li>Przeglądanie i edytowanie danych o włościach, w tym stanu złota oraz zarządzania szeryfami i wójtami.</li>
+      <li>Automatyczne wysyłanie powiadomień e-mail do graczy, którzy nie zaktualizowali danych o złocie, eliminując
+        ręczne przypomnienia.</li>
+      <li>Panel administracyjny z interaktywnymi wykresami historycznych zmian.</li>
+      <li>Bezpieczna autoryzacja oparta na JWT Token, z wydzielonymi rolami Admin i User.</li>
+      <li>Generowanie raportów oraz zarządzanie uprawnieniami i danymi wójtów.</li>
+    </ul>
+
+    <h2>Backend</h2>
+    <p>Podstawę systemu stanowi:</p>
+    <ul>
+      <li>Java 21</li>
+      <li>Spring Boot 3 (Web, Data-JPA, Liquibase, AOP, Mail Sender, Scheduler, Validation, Security – JWT Token)</li>
+      <li>MySQL</li>
+      <li>REST API</li>
+      <li>Testy jednostkowe (JUnit, Mockito, AssertJ)</li>
+      <li>Testy API i manualne (Postman)</li>
+      <li>Wzorce projektowe (adapter, strategia, builder)</li>
+      <li>Lombok</li>
+      <li>Maven</li>
+      <li>Architektura warstwowa</li>
+      <li>Git</li>
+    </ul>
+    <h2>Frontend</h2>
+    <ul>
+      <li>Angular 13.3: struktura aplikacji, komponenty, routing i lazy loading, umożliwiające dynamiczne ładowanie
+        danych w zależności od potrzeb.</li>
+      <li>TypeScript: bezpieczne typowanie danych zapewniające lepszą jakość kodu.</li>
+      <li>RxJS: zarządzanie asynchronicznością i strumieniami danych, wykorzystujące operatory takie jak
+        BehaviorSubject, tap, czy catchError.</li>
+      <li>Angular Material: zaawansowane komponenty UI (MatTable, MatDialog, MatPaginator, MatSnackBar) zapewniające
+        nowoczesny interfejs użytkownika.</li>
+      <li>Angular Flex-Layout: responsywne layouty dostosowujące się do różnych rozmiarów ekranów.</li>
+      <li>SCSS: elastyczne stylowanie umożliwiające pełną kontrolę nad wyglądem aplikacji.</li>
+      <li>Reactive Forms: zaawansowane zarządzanie formularzami z walidacją i dynamicznymi reakcjami.</li>
+      <li>Angular Router: routing aplikacji i zabezpieczanie ścieżek za pomocą <strong>AuthGuard</strong>.</li>
+      <li>Interceptors: automatyczne dołączanie tokenów JWT do żądań HTTP oraz obsługa błędów związanych z autoryzacją.
+      </li>
+      <li>Chart.js + ng2-charts: tworzenie interaktywnych wykresów (BarChart, PieChart) do wizualizacji danych.</li>
+    </ul>
+    <h2>Technologie</h2>
+    <ul>
+      <li><strong>Frontend:</strong> Angular 13.3, TypeScript, RxJS, Angular Material, Angular Flex-Layout, SCSS,
+        Reactive Forms, Angular Router, Interceptors, Chart.js + ng2-charts</li>
+      <li><strong>Backend:</strong> Java 21, Spring Boot 3 (Web, Data-JPA, Liquibase, AOP, Mail Sender, Scheduler,
+        Validation, Security - JWT Token), MySQL, REST API, wzorce projektowe (adapter, strategia, builder), Lombok,
+        Maven, architektura warstwowa, Git</li>
+      <li><strong>Testy:</strong> JUnit, Mockito, AssertJ, Postman</li>
+    </ul>
+
+    <h2>Schemat bazy danych</h2>
+    <div class="screenshots">
+      <img src="assets/mmo/Screen-10.png" alt="Schemat bazy danych" class="screenshot" />
+      <img src="assets/mmo/Screen-01.png" alt="Screen 1" class="screenshot" />
+      <img src="assets/mmo/Screen-02.png" alt="Screen 2" class="screenshot" />
+      <img src="assets/mmo/Screen-03.png" alt="Screen 3" class="screenshot" />
+      <img src="assets/mmo/Screen-04.png" alt="Screen 4" class="screenshot" />
+      <img src="assets/mmo/Screen-05.png" alt="Screen 5" class="screenshot" />
+      <img src="assets/mmo/Screen-06.png" alt="Screen 6" class="screenshot" />
+      <img src="assets/mmo/Screen-07.png" alt="Screen 7" class="screenshot" />
+      <img src="assets/mmo/Screen-08.png" alt="Screen 8" class="screenshot" />
+      <img src="assets/mmo/Screen-09.png" alt="Screen 9" class="screenshot" />
+    </div>
   </div>
